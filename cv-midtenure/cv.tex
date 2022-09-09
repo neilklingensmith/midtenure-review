@@ -1,0 +1,358 @@
+% LaTeX resume using res.cls
+
+\let\latexnofiles\nofiles % These lines are needed to make etaremune work. The res class disables writing to files which breaks etaremune.
+\let\nofiles\relax
+
+\documentclass{res}
+\usepackage{textcomp}
+\usepackage{libertine}
+\usepackage{etaremune}
+
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-0.6in}  % Start text higher on the page 
+\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{12pt}   % make room for header
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\lhead{\hspace*{-\sectionwidth}Neil Klingensmith} % force lhead all the way left
+\rhead{Page \thepage}  % put page number at right
+\cfoot{}  % the footer is empty
+\pagestyle{fancy} % set pagestyle for the document
+
+
+% Used for conference paper list
+\renewcommand*{\labelenumi}{[\labelprefix\theenumi]}
+
+\begin{document} 
+\thispagestyle{empty} % this page does not have a header
+\name{Neil Klingensmith}
+\address{\begin{ncolumn}{2}
+309 Doyle Hall & \hfill neil@cs.luc.edu\\
+1052 West Loyola Avenue & \hfill +1 773 508 8002\\
+Chicago, Illinois 60626 & \hfill http://neilklingensmith.com\\
+\end{ncolumn}
+}
+
+
+\begin{resume}
+\vspace{0.1in}
+%\moveleft.5\sectionwidth\centerline{Objective: To live off of the government.}
+
+\section{RESEARCH INTERESTS}
+\textbf{Embedded Systems, Mobile \& IoT Privacy, Virtualization on Resource-Constrained Devices}
+
+\section{APPOINTMENTS}
+
+    {\bf Assistant Professor,} Loyola University Chicago Computer Science Department
+    \hfill \textbf{2019-Present}
+
+\section{EDUCATION}
+\vspace{0.1in} 
+
+\textbf{PhD, Computer Engineering},
+University of Wisconsin-Madison
+\hfill \textbf{2019}
+
+\textbf{MS Computer Engineering},
+University of Wisconsin-Madison
+\hfill \textbf{2016}
+
+\textbf{BS Electrical Engineering},
+University of Wisconsin-Madison
+\hfill \textbf{2010}
+
+\section{PROFESSIONAL EXPERIENCE} 
+\vspace{0.1in}
+    {\bf Research Assistant,} University of Wisconsin Computer Science Department
+    \hfill \textbf{2012-2019}
+
+\iffalse
+    {\bf Cofounder,} Emonix (http://emonix.io), Madison, WI
+    \hfill \textbf{2014-present}
+    {\bf Embedded Developer,} Harvest Power Technologies, Madison, WI
+    \hfill \textbf{2009-2011}
+
+    {\bf Engineering Intern,} Astronautics Corporation of America, Milwaukee, WI
+    \hfill \textbf{Summer 2008}
+
+    {\bf Engineering Co-Op,} Pentair Water, Brookfield, WI 
+    \hfill \textbf{2007-2008}
+\fi
+\section{FUNDING}
+
+    {\bf Taming Container Privileges using Userland OS Guests}, \\
+    PI, \$500,000, NSA January 2023 - December 2024 
+
+
+    {\bf Collaborative Research: OAC Core: Advancing Low-Power Computer Vision at the Edge}, \\
+    Co-PI, \$250,000, NSF Award Number 2107020 July 2021 - July 2024 
+	
+    {\bf US Department of Energy Fellowship 2013, renewed for 2014}\\
+	through the Building Innovators Program
+	\$110k total
+
+	\textbf{The Brew Seed Accelerator} \$50k seed investment for Emonix, Fall 2017
+
+	{\bf MadWorks Accelerator Economic Impact Award}, 1st Place, \$5k August 2016 
+
+\section{AWARDS}
+
+
+	{\bf UW CS NEST Award}, 1st place, \$1k,  April, 2016
+
+	{\bf Transcend Madison Innovation Competition}, 1st Place, \$7.5k March 2016
+
+	{\bf Dvorak Energy and Global Stewardship Prizes}, Fall 2015\\
+	Wisconsin Energy and Sustainability Challenge
+	Both 1st place, \$10k
+
+
+	{\bf Dvorak Energy Prize}, Spring 2015\\
+	Wisconsin Energy and Sustainability Challenge
+	3rd place, \$500
+
+	{\bf NSF Travel Grant} to attend ACM HotMobile, 2019
+
+	{\bf NSF Travel Grant} to attend ACM eEnergy, 2018
+	
+    {\bf NSF Travel Grant} to attend ACM SenSys, 2013, 2015
+\vfill\eject
+
+\section{UNDER SUBMISSION}
+
+
+    {\bf Trevor: Universally Composable Bit Generation for Zero Involvement Authentication} \\
+    Isaac Ahlgren, Jack West, Julia Bennett, George K Thiruvathukal,  Neil Klingensmith \\
+    Under Submission to SenSys 2022
+
+
+    {\bf Challenges and Practices of Deep Learning Model Reengineering: A Case Study on Computer Vision} \\
+    Wenxin Jiang, Vishnu Banna, Naveen Vivek, Abhinav Goel, Nicholas Synovic, Neil Klingensmith, George K Thiruvathukal, James C Davis \\
+    Under Submission International Conference on Software Engineering (ICSE 2023)
+
+
+\def\labelprefix{C}
+\section{REFEREED CONFERENCE PUBLICATIONS}
+
+\begin{etaremune}[leftmargin=0cm,topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt,] 
+
+\item
+    \textbf{Are You Really Muted? A Privacy Analysis of Mute Buttons in Video Conferencing Apps} \\
+    Yucheng Yang, Jack West, George K Thiruvathukal, Neil Klingensmith, and Kassem Fawaz \\
+    Proceedings on Privacy Enhancing Technologies (PoPETS), 2022
+
+\item
+    {\bf Establishing trust in vehicle-to-vehicle coordination: a sensor fusion approach} \\
+    Jakob Veselsky, Jack West, Isaac Ahlgren, Abhinav Goel, Wenxin Jiang, Kyuin Lee, Younghyun Kim, Yung-Hsiang Lu, James C. Davis, George K. Thiruvathukal, Neil Klingensmith \\
+    DI-CPS (Workshop on Data-Driven and Intelligent Cyber-Physical Systems for Smart Cities), Virtual, 2022
+
+\item
+    {\bf \textsc{AeroKey}: Using Ambient Electromagnetic Radiation for Secure and Usable Wireless Device Authentication} \\
+    Kyuin Lee, Yucheng Yang, Omkar Prabhune, Aishwarya Lekshmi Chithra, Jack West, Kassem Fawaz, Neil Klingensmith, Suman Banerjee, and Younghyun Kim \\
+    Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2021
+
+\item
+    {\bf \textsc{Moonshine}: An Online Randomness Distiller for Zero-Involvement Authentication} \\
+    Jack West, Kyuin Lee, Suman Banerjee, Younghyun Kim, George Thiruvathukal, and Neil Klingensmith, \\
+    ACM IPSN, 2021
+
+
+\item
+    {\bf \textsc{ivPair}: Context-Based Fast Intra-Vehicle Device Pairing for Secure Wireless Connectivity} \\
+    Kyuin Lee, Neil Klingensmith, Dong He, Suman  Banerjee, and Younghyun Kim \\
+    ACM WiSec, 2020
+
+
+\item
+    {\bf FLIC: A Distributed Fog Cache for City-Scale Applications} \\
+    Jackson West, Neil Klingensmith and George Thiruvathukal \\
+    ACM ICFC, 2020
+
+\item
+    {\bf \textsc{VoltKey}: Continuous Secret Key Generation based on Power Line Noise for Zero-Involvement Pairing and Authentication} \\
+    Kyuin Lee, Neil Klingensmith, Younghyun Kim, Suman Banerjee \\
+    Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2019
+
+\item
+    {\bf Using Virtualized Task Isolation to Improve Responsiveness in Mobile and IoT Software} \\
+    Neil Klingensmith, Suman Banerjee \\
+    ACM IoTDI, April 2019
+
+\item
+    {\bf A Hypervisor-Based Privacy Agent for Mobile and IoT Systems} \\
+    Neil Klingensmith, Younghyun Kim, Suman Banerjee \\
+    ACM HotMobile, February 2019
+
+
+\item
+    {\bf A Method for Energy-Efficient Sampling of Analog to Digital Converters} \\
+    Neil Klingensmith, Suman Banerjee \\
+    ACM Transactions on Sustainable Computing 2019
+
+\item
+    {\bf PANDA: Performance Acceleration through Nonuniform Data Acquisition} \\
+    Neil Klingensmith, Suman Banerjee \\
+    ACM eEnergy, June 2018 (22\% Acceptance Ratio)
+
+\item
+    {\bf Hermes: A Real Time Hypervisor for Mobile and IoT Systems} \\
+    Neil Klingensmith, Suman Banerjee \\
+    ACM HotMobile, February 2018
+
+\item
+    {\bf SPOCK: A Sensor Value Prediction and Online Control Algorithm for Building Resource Management} \\
+    Neil Klingensmith, Anantharaghavan Sridhar, Zachary LaVallee, Suman Banerjee \\
+    ACM BuildSys, November 2016 (20\% Acceptance Ratio)
+
+
+\item
+    {\bf Water or Slime? A platform for automating water treatment systems} \\
+    Neil Klingensmith, Anantharaghavan Sridhar, Zachary LaVallee, Suman Banerjee \\
+    ACM BuildSys, November 2015
+
+\item
+    {\bf Hot, Cold and In Between: Enabling Fine-Grained Environmental Control in Homes for Efficiency and Comfort} \\
+    Neil Klingensmith, Joseph Bomber, Suman Banerjee \\
+    ACM eEnergy, June 2014 (20\% Acceptance Ratio)
+
+\item
+    {\bf A Distributed Energy Monitoring and Analytics Platform and its Use Cases} \\
+    Neil Klingensmith, Dale Willis, Suman Banerjee \\
+    ACM BuildSys, November 2013
+
+\end{etaremune}
+
+
+\def\labelprefix{P}
+\section{POSTERS ETC}
+
+\begin{etaremune}[leftmargin=0cm] 
+
+\item
+    {\bf Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics} \\
+    Nicolas Synovic, Matt Hyatt, Rohan Sethi, Sohini Thota, Shilpika, Allan J Miller, Wenxin Jiang, Emmanuel S Amobi, Austin Pinderski, Konstantin Laufer, Nicholas J Hayward, Neil Klingensmith, James C Davis, George K Thiruvathukal \\
+    ACM Automated Software Engineering (ASE) 2022 Tools Track
+
+\item
+    {\bf dBHound - Privacy Sensitive Acoustic Perception in Home Settings (poster)} \\
+    Anantharaghavan Sridhar, Neil Klingensmith, Suman Banerjee \\
+    ACM SenSys, November 2016
+
+\item
+    {\bf Edge Computing in the Extreme for Sustainability (invited paper)} \\
+    Suman Banerjee, Neil Klingensmith, Peng Liu, and Anantharaghavan Sridhar \\
+    ACM S3, October 2016
+
+\item
+    {\bf Water or Slime? A platform for automating water treatment systems (poster)} \\
+    Neil Klingensmith, Pete Chulick, Joseph Bomber, Suman Banerjee \\
+    ACM BuildSys, November 2014
+
+\item
+    {\bf Wireless Control in Microgrids (poster)} \\
+    Tyler Duffy, Neil Klingensmith, Giri Venkataramanan \\
+    31st WEMPEC Annual Review, May 2012
+
+
+\end{etaremune}
+
+\section{STUDENTS}
+
+{\bf Jackson West} \hfill  Master's Thesis, May 2022 \\
+First Employment - University of Wisconsin PhD \\
+Thesis: RANDOMNESS DISTILLATION TO IMPROVE KEY QUALITY FOR CONTEXT-BASED AUTHENTICATION SCHEMES
+
+\section{TEACHING}
+
+CS 362 - Introduction to Computer Architecture
+\hfill \textbf{Fall 2022}
+
+
+CS 310 - Introduction to Operating Systems
+\hfill \textbf{Fall 2022}
+
+CS 264 - Introduction to Computer Systems
+\hfill \textbf{Fall 2022}
+
+
+CS 264 - Introduction to Computer Systems
+\hfill \textbf{Spring 2022}
+
+CS 310 - Introduction to Operating Systems
+\hfill \textbf{Spring 2021}
+
+CS 264 - Introduction to Computer Systems
+\hfill \textbf{Spring 2021}
+
+
+CS 362 - Introduction to Computer Architecture
+\hfill \textbf{Fall 2020}
+
+
+CS 264 - Introduction to Computer Systems
+\hfill \textbf{Fall 2020}
+
+
+CS 310 - Introduction to Operating Systems
+\hfill \textbf{Spring 2020}
+
+CS 264 - Introduction to Computer Systems
+\hfill \textbf{Spring 2020}
+
+CS 163 - Discrete Structures
+\hfill \textbf{Fall 2019}
+
+
+\textbf{Graduate Teaching Assistant},
+ECE/CS 491 - Special Topics in Sustainability
+\hfill \textbf{Fall 2014}
+
+\textbf{Graduate Project Advisor},
+CS 407 - Foundations of Mobile Systems
+\hfill \textbf{Fall 2015}
+
+
+\section{PATENTS}
+
+      % Patent for ivPair
+      {\bf Context-Based Pairing and Methods Thereof}, P2005528PP \\
+      Kyuin Lee, Neil Klingensmith, Younghyun Kim, Suman Banerjee \\
+      (Pending)
+
+      % Patent for VoltKey
+      {\bf Pairing Apparatus using Secret Key Based on Powerline Noise, Method Thereof}, P200527PP \\
+      Kyuin Lee, Neil Klingensmith, Younghyun Kim, Suman Banerjee \\
+      (Pending) \\
+
+      {\bf Method and Device for Controlling a Water Conditioning System} \\
+      Neil Klingensmith, Zach LaVallee, Suman Banerjee \\
+      (Pending) \\
+
+
+\section{INVITED TALKS}
+
+    {\bf Context-Based Zero-Interaction Authentication}, Cambridge University Computer Laboratory Systems Research Group Seminar Series, September 2019
+
+    {\bf Launching a Startup}, UW Industrial Systems Engineering 601, March 2017
+
+    {\bf Online Water Softener Monitoring}, Madison Metropolitan Sewerage District, May 2016
+
+\end{resume}
+
+\section {SERVICE}
+
+    {\bf ACM HotMobile} PC Member 2023
+
+    {\bf ACM Transactions on Sustainable Computing (TSUSC)} Reviewer 2019, 2020
+
+    {\bf IEEE Micro} Reviewer 2020
+
+    {\bf ACM ICDCN} TPC Member 2020
+
+\end{document}
+
+
+
