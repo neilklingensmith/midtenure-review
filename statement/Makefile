@@ -5,6 +5,7 @@ all:
 	pdflatex $(DOCNAME)
 	bibtex $(DOCNAME)
 	pdflatex $(DOCNAME)
+	pdflatex $(DOCNAME)
 	#evince $(DOCNAME).pdf&
 
 spellcheck:
